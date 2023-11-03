@@ -1,0 +1,4 @@
+task :
+honeypot (medium and high)
+pfsense (network firewall)
+modsecurity (application firewall)

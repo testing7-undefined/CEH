@@ -1,0 +1,32 @@
+#################################
+************************************************
+human based social eng:-
+************************************************
+1.impersonation : pretend 
+2.evasedropping : listening
+3.sholder surfing : seeing pin behind the person
+4.Dumpster diving : dumpster
+5.tail gating and piggy backing : recomendation
+
+**************************************************
+++++++++++++++++
++       scams             +
+++++++++++++++++
+1.smishing (SMS)
+2.Vishing(voice)
+3.Phishing (links)
+4.whaling (celebrity target )
+5.Pharming(victim to fake pgs)
+
+**************************************************
+#################################
+
++++++++++++++++++++++++
++  Tasks                                   +
++++++++++++++++++++++++
+Dhcp starvation attack 
+botnet trojans
+phishing tools (otp,sms,credentials,camphishing)
+dos / ddos tools
+
+################################
